@@ -31,6 +31,9 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+ul {
+  padding-left: 0;
+}
 .list {
   list-style: none;
 }
@@ -45,7 +48,7 @@ ul {
 }
 /* Header */
 /* Логотип */
-.roof-conteiner {
+.roof {
   border-bottom: 1px solid #ececec;
 }
 .logo-link {
@@ -310,7 +313,22 @@ ul {
 
 /* Portfolio */
 /* Фильтры */
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-item {
+  margin-right: 8px;
+}
+.filters-item:last-child {
+  margin: 0;
+}
 .filters-btn {
+  align-items: center;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -327,7 +345,22 @@ ul {
   background-color: var(--accent);
 }
 /* Main project */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .project-subtitle {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -338,4 +371,12 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-dark-txt);
+}
+.project-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.project-dscr-conteiner {
+  margin: 20px 24px;
 }
