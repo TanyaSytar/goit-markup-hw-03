@@ -1,0 +1,341 @@
+:root {
+  /* Основные шрифты */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  /* Цвет текста светлая тема */
+  --main-dark-txt: #212121;
+  --secondary-dark-txt: #757575;
+  --dark-txt: #000;
+  /* Цвет текста темная тема */
+  --lihgt-txt: #ffffff;
+  /* Цвет акцента */
+  --accent: #2196f3;
+  /* Цвет фона светлая тема */
+
+  /* Цвет фона темная тема */
+  --dark-bg: #2f303a;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-dark-txt);
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list {
+  list-style: none;
+}
+.link {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.current {
+  color: var(--accent);
+}
+/* Header */
+/* Логотип */
+.roof-conteiner {
+  border-bottom: 1px solid #ececec;
+}
+.logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo-black {
+  color: var(--dark-txt);
+}
+.conteiner {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Меню навигации */
+.menu-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-dark-txt);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 93px;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent);
+}
+.menu-item {
+  margin-right: 50px;
+  display: flex;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+.menu-link {
+  color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.roof-conteiner {
+  display: flex;
+  align-items: center;
+}
+/* Телефон и почта */
+.roof-mail-link,
+.roof-phone-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-dark-txt);
+}
+.roof-mail-link:hover,
+.roof-mail-link:focus,
+.roof-phone-link:hover,
+.roof-phone-link:focus {
+  color: var(--accent);
+}
+.container-connect {
+  display: flex;
+  margin-left: auto;
+}
+
+.roof-mail-link {
+  margin-right: 50px;
+}
+/* Шапка Hero */
+.hero {
+  background-color: var(--dark-bg);
+}
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/* Заголовок */
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lihgt-txt);
+}
+/* Кнопка */
+.hero-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px;
+  border-color: transparent;
+  min-width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--lihgt-txt);
+  background-color: var(--accent);
+  cursor: pointer;
+}
+/* Наши преимущества */
+.feature-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-dark-txt);
+}
+.feature-txt {
+  line-height: 1.71;
+  color: var(--secondary-dark-txt);
+}
+.feature-list {
+  display: flex;
+  padding: 0;
+}
+.feature-item {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4);
+}
+.feature-item:last-child {
+  margin: 0;
+}
+.feature-subtitle {
+  margin-bottom: 10px;
+}
+/* Чем мы занимаемся */
+.title {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 00.03em;
+  text-align: center;
+  color: var(--main-dark-txt);
+}
+.about-list {
+  display: flex;
+  padding: 0;
+}
+.about-item {
+  margin-right: 30px;
+}
+.about-item:last-child {
+  margin: 0;
+}
+.about-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Наша команда */
+
+.team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--main-dark-txt);
+}
+.team-txt {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--secondary-dark-txt);
+}
+.team-list {
+  display: flex;
+  padding: 0;
+}
+.team-item {
+  margin-right: 30px;
+}
+.team-item:last-child {
+  margin: 0;
+}
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Footer */
+.cellar {
+  background-color: var(--dark-bg);
+}
+.cellar-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.cellar-logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent);
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+.logo-white {
+  color: var(--lihgt-txt);
+}
+.cellar .logo-link {
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-list {
+  padding-left: 0;
+}
+.contact-item {
+  margin-bottom: 9px;
+}
+.contact-item:last-child {
+  margin: 0;
+}
+.map-link,
+.cellar-mail-link,
+.cellar-phone-link {
+  font-family: inherit;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.map-link {
+  color: var(--lihgt-txt);
+}
+.cellar-mail-link,
+.cellar-phone-link {
+  color: #ffffff60;
+}
+.map-link:hover,
+.map-link:focus,
+.cellar-mail-link:hover,
+.cellar-mail-link:focus,
+.cellar-phone-link:hover,
+.cellar-phone-link:focus {
+  color: var(--accent);
+}
+
+/* Portfolio */
+/* Фильтры */
+.filters-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-dark-txt);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--lihgt-txt);
+  background-color: var(--accent);
+}
+/* Main project */
+.project-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-dark-txt);
+}
+.project-txt {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-dark-txt);
+}
