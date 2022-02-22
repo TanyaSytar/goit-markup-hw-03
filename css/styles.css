@@ -43,12 +43,10 @@ ul {
   margin-bottom: 0;
   text-decoration: none;
 }
-.current {
-  color: var(--accent);
 }
 /* Header */
 /* Логотип */
-.roof {
+.header {
   border-bottom: 1px solid #ececec;
 }
 .logo-link {
@@ -61,6 +59,7 @@ ul {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 .logo-black {
   color: var(--dark-txt);
@@ -76,6 +75,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* Меню навигации */
 .menu-list {
   font-weight: 500;
@@ -85,7 +85,6 @@ ul {
   display: flex;
   align-items: center;
   padding: 0;
-  margin-left: 93px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -93,7 +92,6 @@ ul {
 }
 .menu-item {
   margin-right: 50px;
-  display: flex;
 }
 .menu-item:last-child {
   margin-right: 0;
@@ -103,14 +101,17 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.current {
+  color: var(--accent);
+}
 
-.roof-conteiner {
+.header-conteiner {
   display: flex;
   align-items: center;
 }
 /* Телефон и почта */
-.roof-mail-link,
-.roof-phone-link {
+.header-mail-link,
+.header-phone-link {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -118,25 +119,23 @@ ul {
   letter-spacing: 0.02em;
   color: var(--secondary-dark-txt);
 }
-.roof-mail-link:hover,
-.roof-mail-link:focus,
-.roof-phone-link:hover,
-.roof-phone-link:focus {
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-phone-link:hover,
+.header-phone-link:focus {
   color: var(--accent);
 }
 .container-connect {
   display: flex;
   margin-left: auto;
 }
-
-.roof-mail-link {
+.connect-item:not(:last-child) {
   margin-right: 50px;
-}
+} 
+
 /* Шапка Hero */
 .hero {
   background-color: var(--dark-bg);
-}
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -174,6 +173,9 @@ ul {
   cursor: pointer;
 }
 /* Наши преимущества */
+.feature-title {
+  visibility: hidden;
+}
 .feature-subtitle {
   font-size: 16px;
   font-weight: 700;
@@ -200,8 +202,11 @@ ul {
   margin-bottom: 10px;
 }
 /* Чем мы занимаемся */
+.about {
+  padding-top: 0;
+}
 .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -219,14 +224,16 @@ ul {
 .about-item:last-child {
   margin: 0;
 }
-.about-img {
+.img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Наша команда */
-
+.team {
+  background-color: #F5F4FA;
+}
 .team-subtitle {
   margin-bottom: 10px;
   font-weight: 500;
@@ -257,16 +264,15 @@ ul {
 .team-dscr-conteiner {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
 /* Footer */
-.cellar {
+.footer {
   background-color: var(--dark-bg);
-}
-.cellar-conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.cellar-logo-link {
+.footer-logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -279,7 +285,7 @@ ul {
 .logo-white {
   color: var(--lihgt-txt);
 }
-.cellar .logo-link {
+.footer .logo-link {
   display: flex;
   margin-bottom: 20px;
 }
@@ -293,8 +299,8 @@ ul {
   margin: 0;
 }
 .map-link,
-.cellar-mail-link,
-.cellar-phone-link {
+.footer-mail-link,
+.footer-phone-link {
   font-family: inherit;
   font-style: normal;
   line-height: 1.71;
@@ -303,21 +309,24 @@ ul {
 .map-link {
   color: var(--lihgt-txt);
 }
-.cellar-mail-link,
-.cellar-phone-link {
+.footer-mail-link,
+.footer-phone-link {
   color: #ffffff60;
 }
 .map-link:hover,
 .map-link:focus,
-.cellar-mail-link:hover,
-.cellar-mail-link:focus,
-.cellar-phone-link:hover,
-.cellar-phone-link:focus {
+.footer-mail-link:hover,
+.footer-mail-link:focus,
+.footer-phone-link:hover,
+.footer-phone-link:focus {
   color: var(--accent);
 }
 
 /* Portfolio */
 /* Фильтры */
+.project-title {
+  visibility: hidden;
+}
 .filters-list {
   display: flex;
   justify-content: center;
@@ -357,6 +366,7 @@ ul {
 .project-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: calc(100%-60px/3);
 }
 .project-item:nth-child(3n) {
   margin-right: 0;
@@ -384,4 +394,7 @@ ul {
 }
 .project-dscr-conteiner {
   padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
